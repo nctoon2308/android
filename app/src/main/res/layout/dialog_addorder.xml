@@ -10,7 +10,7 @@
         android:background="@android:color/holo_orange_dark"
         android:textSize="40sp"
         android:gravity="center"
-        android:text="Them don hang"
+        android:text="Thêm xe vào bãi"
         />
     
     <EditText
@@ -23,5 +23,6 @@
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save" />
+        android:hint="Nhập biển số xe"
+        android:text="Lưu" />
 </LinearLayout>

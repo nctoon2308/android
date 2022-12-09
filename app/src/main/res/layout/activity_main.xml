@@ -5,19 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
-    <Button
-        android:id="@+id/btnOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Order" />
+        <Button
+            android:id="@+id/btnAddOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm xe" />
 
-    <Button
-        android:id="@+id/btnAddOrder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Order" />
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách xe đang gửi" />
+
+        <Button
+            android:id="@+id/btnAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý thông tin thành viên" />
+
+        <Button
+            android:id="@+id/btnAddMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nạp tiền theo biển số xe" />
 
 
 </LinearLayout>

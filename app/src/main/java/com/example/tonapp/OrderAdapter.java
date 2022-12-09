@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 
-
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class OrderAdapter extends BaseAdapter {
@@ -49,8 +49,10 @@ public class OrderAdapter extends BaseAdapter {
 
         DonHang DonHang = donHangList.get(position);
 
-        txtCode.setText(DonHang.getOrderCode());
-        txtTime.setText(DonHang.getTimeIn() + "");
+        txtCode.setText("Biển số: "+DonHang.getOrderCode());
+        SimpleDateFormat sdf = new SimpleDateFormat("HH.mm dd/MM/yy");
+        String time = sdf.format(DonHang.getTimeIn()) ;
+        txtTime.setText("Thời gian vào: "+time);
 
         return convertView;
 

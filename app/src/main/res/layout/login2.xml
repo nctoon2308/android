@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3DEDE"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SỬA THÔNG TIN NGƯỜI DÙNG"
+            android:background="#9BDFE8"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nhập tên người dùng" />
+
+        <EditText
+            android:id="@+id/edtNewUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nhập tên đăng nhập mới" />
+
+        <EditText
+            android:id="@+id/edtOldPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Nhập mật khẩu cũ" />
+
+        <EditText
+            android:id="@+id/edtNewPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Nhập mật khẩu mới" />
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SỬA"/>
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIẾP TỤC"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

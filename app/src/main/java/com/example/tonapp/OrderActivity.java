@@ -105,7 +105,7 @@ public class OrderActivity extends AppCompatActivity {
                     adapter.notifyDataSetChanged();
                     dialog.dismiss();
                 }else {
-                    Toast.makeText(OrderActivity.this, "Lỗi",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this, "Xảy ra lỗi, vui lòng thử lại!!",Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -115,13 +115,13 @@ public class OrderActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dh.setOrderCode(edtCode.getText().toString());
                 if (DonHangDAO.update(OrderActivity.this, dh)){
-                    Toast.makeText(OrderActivity.this, "Update Success",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this, "Cập nhật thành công",Toast.LENGTH_LONG).show();
                     dsDH.clear();
                     dsDH.addAll(DonHangDAO.getAll(OrderActivity.this));
                     adapter.notifyDataSetChanged();
                     dialog.dismiss();
                 }else {
-                    Toast.makeText(OrderActivity.this, "Update Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this, "Xảy ra lỗi, vui lòng thử lại!!",Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -130,16 +130,15 @@ public class OrderActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (DonHangDAO.delete(OrderActivity.this, dh.getOrderId())){
-                    Toast.makeText(OrderActivity.this, "Delete Success",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this, "Xoá thành công",Toast.LENGTH_LONG).show();
                     dsDH.clear();
                     dsDH.addAll(DonHangDAO.getAll(OrderActivity.this));
                     adapter.notifyDataSetChanged();
                     dialog.dismiss();
                 }else {
-                    Toast.makeText(OrderActivity.this, "Delete Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this, "Xảy ra lỗi, vui lòng thử lại!!",Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
-
 }
